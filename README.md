@@ -1,9 +1,14 @@
+# License
+This data was generated using data from the Redistricting Data Hub.  Any use of this project shall also comply with restrictions on use of data and attribution requirements set forth in the Redistricting Data Hub terms and conditions found at: [https://redistrictingdatahub.org/terms-and-conditions/](https://redistrictingdatahub.org/terms-and-conditions/).
+
+Use of this project is further governed by the terms of the [Creative Commons Attribution Noncommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en)
+
 # West Virginia Election Shapefile
 
-This shapefile was processed by Professor Ellen Veomett and her student Ananya Agarwal.
+This shapefile was processed by Professor Ellen Veomett and her student Ananya Agarwal using the corresponding jupyter notebook.
 
 # **Sources**
-@author: eveomett AI for Redistricting, USF All data retrieved 05/30/24:
+All data retrieved 05/30/24:
 
 Obtain the following data from Restricting Data Hub
 
@@ -23,19 +28,17 @@ Obtain the following data from Restricting Data Hub
 
 # **Processing**
 
-Demographic data were aggregated from the census block level and precincts were assigned to districts using [MGGG's proration software](https://github.com/mggg/maup). Election data were also prorated onto VTDs from the original precinct shapefile using the `maup` package.
+Data were cleaned and aggregated in the corresponding jupyter notebook using MGGG’s python library [maup](https://github.com/mggg/maup).  
 
 # **Metadata**
 
 Below is a brief description of each of the listed variables in the attribute table of the VTD shapefile:
 
-- `STATEFP`: State FIPS code
-- `COUNTYFP`: County FIPS code
+- `STATEFP20`: State FIPS code
+- `COUNTYFP20`: County FIPS code
 - `VTDST20`: Voting tabulation district FIPS code
 - `NAME20`: Voting tabulation district name
 - `NAMELSAD`: name and legal/statistical area description (LSAD)
-- `P_CODE20`: Precinct Code
-- `CODE_NAME20`: Voting tabulation district name
 - `CD`: Congressional district ID in 2022 enacted congressional map
 - `SEND`: State Senate district for 2021 State Senate Adopted Plan
 - `HDIST`: State House district for 2024 State House of Representatives Districts Plan
@@ -64,28 +67,46 @@ Below is a brief description of each of the listed variables in the attribute ta
 - `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population in 2020 Census
 - `OTHERVAP`: Other race, non-hispanic, voting age population in 2020 Census
 - `2MOREVAP`: Two or more races, non-hispanic, voting age population in 2020 Census
-- `ATG18D`: Number of votes for 2018 Democratic attorney general candidate
-- `ATG18R`: Number of votes for 2018 Republican attorney general candidate
-- `ATG18O`: Number of votes for 2018 other party's attorney general candidate
-- `GOV18D`: Number of votes for 2018 Democratic gubernatorial candidate
-- `GOV18R`: Number of votes for 2018 Republican gubernatorial candidate
-- `GOV18O`: Number of votes for 2018 other party's gubernatorial candidate
+- 'AGR16D': Number of votes for 2016 Democratic commissioner of agriculture candidate
+- 'AGR16R': Number of votes for 2016 Republican commissioner of agriculture candidate
+- 'AGR16O': Number of votes for 2016 other party's commissioner of agriculture candidate
+- 'AGR20D': Number of votes for 2020 Democratic commissioner of agriculture candidate
+- 'AGR20R': Number of votes for 2020 Republican commissioner of agriculture candidate
+- `ATG16D`: Number of votes for 2016 Democratic attorney general candidate
+- `ATG16R`: Number of votes for 2016 Republican attorney general candidate
+- `ATG16O`: Number of votes for 2016 other party's attorney general candidate
+- `ATG20D`: Number of votes for 2020 Democratic attorney general candidate
+- `ATG20R`: Number of votes for 2020 Republican attorney general candidate
+- `AUD16D': Number of votes for 2016 Democratic auditor candidate
+- `AUD16R': Number of votes for 2016 Republican auditor candidate
+- `AUD16O': Number of votes for 2016 other party's auditor candidate
+- `AUD20D': Number of votes for 2020 Democratic auditor candidate
+- `AUD20R': Number of votes for 2020 Republican auditor candidate
+- `GOV16D`: Number of votes for 2016 Democratic gubernatorial candidate
+- `GOV16R`: Number of votes for 2016 Republican gubernatorial candidate
+- `GOV16O`: Number of votes for 2016 other party's gubernatorial candidate
+- `GOV20D`: Number of votes for 2020 Democratic gubernatorial candidate
+- `GOV20R`: Number of votes for 2020 Republican gubernatorial candidate
+- `GOV20O`: Number of votes for 2020 other party's gubernatorial candidate
+- `PRE16D`: Number of votes for 2016 Democratic presidential candidate
+- `PRE16R`: Number of votes for 2016 Republican presidential candidate
+- `PRE16O`: Number of votes for 2016 other party's presidential candidate
 - `PRE20D`: Number of votes for 2020 Democratic presidential candidate
 - `PRE20R`: Number of votes for 2020 Republican presidential candidate
 - `PRE20O`: Number of votes for 2020 other party's presidential candidate
-- `SOS18D`: Number of votes for 2018 Democratic Secretary of State
-- `SOS18R`: Number of votes for 2018 Republican Secretary of State
-- `SOS18O`: Number of votes for 2018 other party's Secretary of State
-- `TRE18D`: Number of votes for 2018 Democratic Treasurer
-- `TRE18R`: Number of votes for 2018 Republican Treasurer
-- `TRE18O`: Number of votes for 2018 other party's Treasurer
+- `SOS16D`: Number of votes for 2016 Democratic Secretary of State
+- `SOS16R`: Number of votes for 2016 Republican Secretary of State
+- `SOS16O`: Number of votes for 2016 other party's Secretary of State
+- `SOS20D`: Number of votes for 2020 Democratic Secretary of State
+- `SOS20R`: Number of votes for 2020 Republican Secretary of State
+- `TRE16D`: Number of votes for 2016 Democratic Treasurer
+- `TRE16R`: Number of votes for 2016 Republican Treasurer
+- `TRE16O`: Number of votes for 2016 other party's Treasurer
+- `TRE20D`: Number of votes for 2020 Democratic Treasurer
+- `TRE20R`: Number of votes for 2020 Republican Treasurer
+- `USS18D`: Number of votes for 2018 Democratic senate candidate
+- `USS18R`: Number of votes for 2018 Republican senate candidate
+- `USS18O`: Number of votes for 2018 other party's senate candidate
 - `USS20D`: Number of votes for 2020 Democratic senate candidate
 - `USS20R`: Number of votes for 2020 Republican senate candidate
 - `USS20O`: Number of votes for 2020 other party's senate candidate
-- `COM18D`: Number of votes for 2018 Democratic Comptroller
-- `COM18R`: Number of votes for 2018 Republican Comptroller
-- `COM18O`: Number of votes for 2018 other party's Comptroller
-
-# **Projection**
-
-The shapefile uses a UTM NAD83 projection (EPSG: 4269).
