@@ -3,7 +3,7 @@ This data was generated using data from the Redistricting Data Hub.  Any use of 
 
 Use of this project is further governed by the terms of the [Creative Commons Attribution Noncommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en)
 
-# West Virginia Election Shapefile
+# West Virginia Json
 
 This shapefile was processed by Professor Ellen Veomett and her student Ananya Agarwal using the corresponding jupyter notebook.
 
@@ -67,21 +67,21 @@ Below is a brief description of each of the listed variables in the attribute ta
 - `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population in 2020 Census
 - `OTHERVAP`: Other race, non-hispanic, voting age population in 2020 Census
 - `2MOREVAP`: Two or more races, non-hispanic, voting age population in 2020 Census
-- 'AGR16D': Number of votes for 2016 Democratic commissioner of agriculture candidate
-- 'AGR16R': Number of votes for 2016 Republican commissioner of agriculture candidate
-- 'AGR16O': Number of votes for 2016 other party's commissioner of agriculture candidate
-- 'AGR20D': Number of votes for 2020 Democratic commissioner of agriculture candidate
-- 'AGR20R': Number of votes for 2020 Republican commissioner of agriculture candidate
+- `AGR16D`: Number of votes for 2016 Democratic commissioner of agriculture candidate
+- `AGR16R`: Number of votes for 2016 Republican commissioner of agriculture candidate
+- `AGR16O`: Number of votes for 2016 other party's commissioner of agriculture candidate
+- `AGR20D`: Number of votes for 2020 Democratic commissioner of agriculture candidate
+- `AGR20R`: Number of votes for 2020 Republican commissioner of agriculture candidate
 - `ATG16D`: Number of votes for 2016 Democratic attorney general candidate
 - `ATG16R`: Number of votes for 2016 Republican attorney general candidate
 - `ATG16O`: Number of votes for 2016 other party's attorney general candidate
 - `ATG20D`: Number of votes for 2020 Democratic attorney general candidate
 - `ATG20R`: Number of votes for 2020 Republican attorney general candidate
-- `AUD16D': Number of votes for 2016 Democratic auditor candidate
-- `AUD16R': Number of votes for 2016 Republican auditor candidate
-- `AUD16O': Number of votes for 2016 other party's auditor candidate
-- `AUD20D': Number of votes for 2020 Democratic auditor candidate
-- `AUD20R': Number of votes for 2020 Republican auditor candidate
+- `AUD16D`: Number of votes for 2016 Democratic auditor candidate
+- `AUD16R`: Number of votes for 2016 Republican auditor candidate
+- `AUD16O`: Number of votes for 2016 other party's auditor candidate
+- `AUD20D`: Number of votes for 2020 Democratic auditor candidate
+- `AUD20R`: Number of votes for 2020 Republican auditor candidate
 - `GOV16D`: Number of votes for 2016 Democratic gubernatorial candidate
 - `GOV16R`: Number of votes for 2016 Republican gubernatorial candidate
 - `GOV16O`: Number of votes for 2016 other party's gubernatorial candidate
